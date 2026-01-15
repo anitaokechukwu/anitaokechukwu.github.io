@@ -1,48 +1,85 @@
-
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anita Okechukwu | Personal Website</title>
-  <style>h3 {
-  margin-top: 30px;
-}
+  <title>Anita Okechukwu | Profile</title>
 
-ul {
-  margin-left: 20px;
-}
-
+  <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f7f9fc;
-      margin: 0;
-      padding: 0;
       color: #333;
     }
+
     header {
       background-color: #4a90e2;
-      color: white;
       padding: 30px;
       text-align: center;
+      color: white;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 6px;
+      font-size: 15px;
+      opacity: 0.95;
+    }
+
     section {
-      padding: 25px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 20px;
     }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 22px;
+      margin-bottom: 22px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
     h2 {
       color: #4a90e2;
+      margin-top: 0;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      background-color: #4a90e2;
+      font-size: 14px;
+    }
+
+    .buttons a.whatsapp {
+      background-color: #25D366;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #eee;
+      padding: 18px;
+      font-size: 14px;
+      color: #666;
+      background-color: #eef1f5;
       margin-top: 40px;
-    }
-    a {
-      color: #4a90e2;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -50,103 +87,79 @@ ul {
 <body>
 
 <header>
-  <h1>Hello, I’m Anita Okechukwu 👋</h1>
-  <p>Midwife | Aspiring Data Analyst | Digital Learner</p>
+  <h1>Anita Okechukwu</h1>
+  <p>Midwife | Data Analyst | Data Scientist | Medical Coder | Digital Markerting</p>
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <p>
-    I am a registered midwife with experience in maternal and newborn care.
-    I am currently expanding my skills into data analysis, technology,
-    and digital tools, with the goal of working remotely and applying data
-    to healthcare and business problems.
-  </p>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Midwifery & Healthcare Support</li>
-    <li>Basic Data Analysis (SQL, Excel – learning)</li>
-    <li>Digital Marketing (Beginner)</li>
-    <li>Content Creation & Voice-over</li>
-  </ul>
-</section>
+  <div class="card">
+    <h2>Overview</h2>
+    <p>
+      Registered midwife with hands-on healthcare experience,
+      currently into data analysis, Data Science, Medical Coding and digital tools
+      to solve healthcare and business problems.
+    </p>
+  </div>
 
-<section>
-  <h2>Projects</h2>
+  <div class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>Midwifery & Healthcare Support</li>
+      <li>Data Analysis (SQL, Power BI, Excel)</li>
+      <li>Data Science ( python, ML, Tableau)</li>
+      <li>Digital Marketing( SEO, Social Media Management) </li>
+      <li>AI Automation </li>
+      <li>Content Creation & Voice-over</li>
+    </ul>
+  </div>
 
-  <h3>Personal Portfolio Website</h3>
-  <p>
-    Designed and published a personal portfolio website using GitHub Pages and basic HTML.
-    The website showcases my background, skills, and learning journey while helping me
-    understand website structure, online deployment, and version control with GitHub.
-  </p>
-  <ul>
-    <li>Tools used: HTML, GitHub, GitHub Pages</li>
-    <li>Skills gained: Website setup, version control, problem solving</li>
-  </ul>
+  <div class="card">
+    <h2>Projects</h2>
 
-  <h3>Hospital Encounter Data Analysis (SQL Project)</h3>
-  <p>
-    Analyzed hospital patient encounter data to uncover trends in admissions, encounter
-    types, costs, and readmission behavior. This project demonstrates the practical use
-    of SQL for healthcare data analytics and business insight reporting.
-  </p>
+    <p><strong>Hospital Encounter Data Analysis (SQL)</strong></p>
+    <p>
+      Analyzed hospital encounter data to identify trends in admissions,
+      encounter types, costs, and patient readmissions using SQL.
+    </p>
 
-  <h4>Key Questions Analyzed</h4>
-  <ul>
-    <li>Total encounters per year</li>
-    <li>Encounter class distribution</li>
-    <li>Encounter duration (over vs under 24 hours)</li>
-    <li>Readmissions within 30 days</li>
-    <li>Top procedures by frequency and cost</li>
-  </ul>
+    <p><strong>Personal Portfolio Website</strong></p>
+    <p>
+      Built and deployed a personal portfolio using HTML and GitHub Pages
+      to showcase skills and learning progress.
+    </p>
+  </div>
 
-  <h4>SQL Techniques Used</h4>
-  <ul>
-    <li>Aggregations: COUNT(), AVG(), SUM()</li>
-    <li>Date functions: YEAR(), MONTH(), QUARTER(), DATEDIFF()</li>
-    <li>Joins and window functions</li>
-    <li>CASE statements and ranking</li>
-  </ul>
+  <div class="card">
+    <h2>Photos</h2>
+    <p>Image gallery coming soon.</p>
+  </div>
 
-  <h4>Key Insights</h4>
-  <ul>
-    <li>Most encounters were outpatient or ambulatory</li>
-    <li>70–80% of encounters lasted under 24 hours</li>
-    <li>A small percentage of patients had frequent readmissions</li>
-    <li>Certain payers showed higher average claim costs</li>
-  </ul>
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: anitaokechukwu927@gmail.com</p>
 
-  <h3>Excel Practice – Basic Data Analysis</h3>
-  <p>
-    Practiced basic data analysis using Microsoft Excel by working with sample datasets.
-    This included data cleaning, basic formulas, and simple charts to identify trends
-    and summaries.
-  </p>
-  <ul>
-    <li>Tools used: Microsoft Excel</li>
-    <li>Skills gained: Data cleaning, formulas, basic data visualization</li>
-  </ul>
-  
-<section>
-  <h2>Contact</h2>
-  <p>
-    📧 Email:
-    <a href="mailto:anitaokechukwu927@gmail.com">
-      anitaokechukwu927@gmail.com
-    </a>
-  </p>
+    <div class="buttons">
+      <a href="mailto:anitaokechukwu927@gmail.com">Email</a>
+    </div>
+   
+  </div>
+
 </section>
 
 <footer>
-  <p>© 2026 Anita Okechukwu</p>
+  © 2026 Anita Okechukwu
 </footer>
+
 </body>
 </html>
 
-<section>
+ 
+     
+
+ 
+      
   
-
-
-
+  
+      
+    
