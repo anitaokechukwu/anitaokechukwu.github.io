@@ -1,9 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
   <title>short-videos</title>
+    .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+  </style>
 </head>
+   
 <body>
-  <h1>This page is under construction</h1>
+  <div class="card">
+  <h2>Short Video Gallery</h2>
+
+  <div class="gallery">
+    <img src="https://via.placeholder.com/400x300" alt="Short video thumbnail">
+    <img src="https://via.placeholder.com/400x300" alt="Short video thumbnail">
+    <img src="https://via.placeholder.com/400x300" alt="Short video thumbnail">
+    <img src="https://via.placeholder.com/400x300" alt="Short video thumbnail">
+  </div>
+</div>
+
 </body>
 </html>
