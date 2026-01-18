@@ -237,6 +237,41 @@ footer {
   .dropdown-menu {
     position: static;
     border: none;
+   /* MORE dropdown */
+.more {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  list-style: none;
+  padding: 10px;
+  min-width: 160px;
+}
+
+.dropdown li {
+  padding: 8px 0;
+}
+
+/* Desktop hover */
+.more:hover .dropdown {
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .dropdown {
+    position: static;
+    display: none;
+    padding-left: 15px;
+  }
+
+  .dropdown.show {
+    display: block;
   }
 }
 
@@ -320,11 +355,20 @@ footer {
   </footer>
  
  <script>
-  function toggleMenu() {
-    document.getElementById("navMenu").classList.toggle("show");
-  }
-</script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+  const moreLink = document.querySelector(".more > a");
+  const dropdown = document.querySelector(".dropdown");
 
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  moreLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    dropdown.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>
