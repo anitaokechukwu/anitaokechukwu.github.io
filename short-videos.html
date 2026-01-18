@@ -1,51 +1,136 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Short Videos | Anita Okechukwu</title>
+
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 18px;
+      color: #1f3c88;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 12px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+    }
+
+    /* MOBILE NAV FIX */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+      }
+    }
+
+    /* PAGE CONTENT */
+    .container {
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1f3c88;
+    }
+
+    /* GALLERY */
     .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin-top: 15px;
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
 
-.gallery img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      background: #ddd;
+    }
 
-  <title>short-videos</title>
-    .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin-top: 15px;
-}
+    .coming-soon {
+      text-align: center;
+      margin-top: 30px;
+      color: #666;
+      font-size: 14px;
+    }
 
-.gallery img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      font-size: 13px;
+      color: #777;
+    }
   </style>
 </head>
-   
-<body>
-  <div class="card">
-  <h2>Short Video Gallery</h2>
 
-  <div class="gallery">
-    <img src="https://via.placeholder.com/400x300" alt="">
-    <img src="https://via.placeholder.com/400x300" alt="">
-    <img src="https://via.placeholder.com/400x300" alt="">
-    <img src="https://via.placeholder.com/400x300" alt="">
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="logo">Anita</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="images.html">Images</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="short-video.html">Short Videos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="container">
+    <h1>Short Videos</h1>
+
+    <div class="gallery">
+      <!-- Replace images later -->
+      <img src="https://via.placeholder.com/300x500" alt="Short Video 1">
+      <img src="https://via.placeholder.com/300x500" alt="Short Video 2">
+      <img src="https://via.placeholder.com/300x500" alt="Short Video 3">
+      <img src="https://via.placeholder.com/300x500" alt="Short Video 4">
+    </div>
+
+    <p class="coming-soon">
+      🎬 Short video content coming soon. This section is under construction.
+    </p>
   </div>
-</div>
+
+  <footer>
+    © 2026 Anita Okechukwu. All rights reserved.
+  </footer>
 
 </body>
 </html>
