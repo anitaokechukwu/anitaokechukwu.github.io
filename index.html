@@ -138,8 +138,108 @@ footer {
 
   .nav-menu {
     padding: 8px;
+   /* ===== NAVBAR ===== */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+}
+
+.logo {
+  font-weight: bold;
+  color: #4a90e2;
+  font-size: 18px;
+}
+
+/* Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding: 6px 8px;
+}
+
+.nav-menu a:hover {
+  color: #4a90e2;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #fff;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  border: 1px solid #ddd;
+  padding: 6px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 6px 12px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    border: none;
   }
 }
+
 </style>
 
   
@@ -147,8 +247,15 @@ footer {
 
 <body>
 
-  <nav>
-    <ul class="nav-menu">
+ <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">Anita</div>
+
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <ul class="nav-menu" id="navMenu">
       <li><a href="index.html">Home</a></li>
       <li><a href="business.html">Business</a></li>
       <li><a href="projects.html">Projects</a></li>
@@ -156,17 +263,23 @@ footer {
       <li><a href="videos.html">Video</a></li>
       <li><a href="short-videos.html">Short Videos</a></li>
       <li><a href="news.html">News</a></li>
-      <ul class="dropdown-menu">
-  <li><a href="web.html">Web</a></li>
-  <li><a href="map.html">Map</a></li>
-  <li><a href="finance.html">Finance</a></li>
-  <li><a href="feedback.html">Feedback</a></li>
-  <li><a href="book.html">Book</a></li>
-</ul>
+
+      <li class="dropdown">
+        <a href="#">More ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Web</a></li>
+          <li><a href="#">Map</a></li>
+          <li><a href="#">Finance</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Book</a></li>
+        </ul>
+      </li>
 
       <li><a href="#contact">Contact</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
+
 
   <header>
     <h1>Anita Okechukwu</h1>
@@ -213,6 +326,13 @@ footer {
   <footer>
     © 2026 Anita Okechukwu
   </footer>
+ 
+ <script>
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("show");
+  }
+</script>
+
 
 </body>
 </html>
