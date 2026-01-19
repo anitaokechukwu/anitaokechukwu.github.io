@@ -329,20 +329,19 @@ footer {
  
 
 <script>
-  const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("navLinks");
-  const moreLink = document.querySelector(".more > a");
-  const dropdown = document.querySelector(".dropdown");
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const more = document.querySelector(".more");
 
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
 
-  moreLink.addEventListener("click", (e) => {
-    e.preventDefault();
-    dropdown.classList.toggle("show");
+  more.addEventListener("click", () => {
+    more.classList.toggle("active");
   });
 </script>
+
 
 </body>
 </html>
