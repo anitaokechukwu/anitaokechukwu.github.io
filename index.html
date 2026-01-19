@@ -208,6 +208,13 @@ footer {
     width: 100%;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
+ .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  position: relative; /* ✅ ADD THIS */
+}
+
 
   .nav-links.active {
     display: flex;
@@ -332,15 +339,18 @@ footer {
   const hamburger = document.querySelector(".hamburger");
   const navLinks = document.querySelector(".nav-links");
   const more = document.querySelector(".more");
+  const moreLink = more.querySelector("a");
 
   hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
 
-  more.addEventListener("click", () => {
+  moreLink.addEventListener("click", (e) => {
+    e.preventDefault(); // ✅ VERY IMPORTANT
     more.classList.toggle("active");
   });
 </script>
+
 
 
 </body>
