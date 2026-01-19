@@ -196,40 +196,47 @@ footer {
   font-size: 24px;
   cursor: pointer;
 }
-
-/* ===== MOBILE ===== */
+/* ===== MOBILE NAVIGATION ===== */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
-    background: white;
+    background: #fff;
     position: absolute;
-    top: 56px;
-    left: 0;
-    border-top: 1px solid #e5e7eb;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
   .nav-links.active {
     display: flex;
   }
 
-  .dropdown {
-    position: static;
-    display: none;
-    padding-left: 15px;
+  .hamburger {
+    display: block;
+    cursor: pointer;
   }
 
-  .dropdown.show {
+  .hamburger span {
     display: block;
+    width: 25px;
+    height: 3px;
+    background: #000;
+    margin: 5px 0;
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
   }
 
   .more:hover .dropdown {
     display: none;
+  }
+
+  .more.active .dropdown {
+    display: block;
   }
 }
 
