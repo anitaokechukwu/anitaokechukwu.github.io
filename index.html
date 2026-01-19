@@ -282,6 +282,250 @@ footer {
 
 <body>
 
+< <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anita Okechukwu | Portfolio</title>
+
+  <style>
+  
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8fafc;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 12px;
+}
+
+.nav-menu li {
+  margin: 6px 10px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.nav-menu a:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Header */
+header {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+header p {
+  margin-top: 8px;
+  font-size: 16px;
+  opacity: 0.95;
+}
+
+/* Layout */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 24px 16px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+h2 {
+  color: #2563eb;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+.buttons a {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: #2563eb;
+  font-size: 14px;
+}
+
+.buttons a:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #6b7280;
+  background-color: #f1f5f9;
+  margin-top: 40px;
+}
+/* ===== NAVBAR ===== */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2563eb;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #1f2937;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.nav-links li a:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* More dropdown */
+.more {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.more:hover .dropdown {
+  display: block;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .dropdown {
+    position: static;
+    display: none;
+    padding-left: 15px;
+  }
+
+  .dropdown.show {
+    display: block;
+  }
+
+  .more:hover .dropdown {
+    display: none;
+  }
+}
+
+  .dropdown.show {
+    display: block;
+  }
+}
+
+</style>
+
+  
+</head>
+
+<body>
+
 <nav class="navbar">
   <div class="logo">My Website</div>
 
@@ -305,6 +549,73 @@ footer {
 
   <div class="hamburger" id="hamburger">☰</div>
 </nav>
+
+
+
+  <header>
+    <h1>Anita Okechukwu</h1>
+    <p>Midwife | Data Analyst | Data Scientist | Medical Coder | Digital Marketing</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>Overview</h2>
+      <p>
+        Registered midwife with hands-on healthcare experience,
+        currently expanding into data analysis, data science,
+        medical coding, and digital tools.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Midwifery & Healthcare Support</li>
+        <li>Data Analysis (SQL, Power BI, Excel)</li>
+        <li>Data Science (Python, ML, Tableau)</li>
+        <li>Digital Marketing (SEO, Social Media)</li>
+        <li>AI Automation</li>
+        <li>Content Creation & Voice-over</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Projects</h2>
+      <p><strong>Hospital Encounter Data Analysis (SQL)</strong></p>
+      <p>Healthcare data analysis using SQL to uncover trends.</p>
+
+      <p><strong>Personal Portfolio Website</strong></p>
+      <p>Built and deployed using HTML and GitHub Pages.</p>
+    </div>
+
+    <div class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: anitaokechukwu927@gmail.com</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Anita Okechukwu
+  </footer>
+ 
+ <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+  const moreLink = document.querySelector(".more > a");
+  const dropdown = document.querySelector(".dropdown");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  moreLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    dropdown.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>
 
 
 
