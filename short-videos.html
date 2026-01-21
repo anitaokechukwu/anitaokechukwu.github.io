@@ -92,6 +92,27 @@
       font-size: 13px;
       color: #777;
     }
+    .media-gallery {
+  padding: 20px;
+  text-align: center;
+}
+
+.media-gallery h2 {
+  margin-bottom: 15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img,
+.gallery video {
+  width: 100%;
+  border-radius: 10px;
+}
+
   </style>
 </head>
 
@@ -124,7 +145,21 @@
     </div>
 
     <p class="coming-soon">
-      🎬 Short video content coming soon. This section is under construction.
+      <section class="media-gallery">
+  <h2>My Gallery</h2>
+
+  <div class="gallery">
+    <!-- IMAGE -->
+    <img src="images/sample1.jpg" alt="My project image">
+
+    <!-- VIDEO -->
+    <video controls>
+      <source src="videos/sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
     </p>
   </div>
 
