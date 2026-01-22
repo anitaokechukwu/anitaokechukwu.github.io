@@ -185,6 +185,35 @@ footer {
   opacity: 0.9;
   transform: translateY(-2px);
 }
+  .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+.project-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 
 }
 
@@ -232,22 +261,42 @@ footer {
 </div>
 
     
-  <!-- PROJECT 2 -->
+  <!-- PROJECT 2-->
+<div class="projects-grid">
+
   <div class="project-card">
-    <img src="images/sql-project.jpg" alt="SQL Project">
-    <h3>SQL Analytics</h3>
-    <p>SQL queries for real-world datasets with insights.</p>
-    <a href="https://github.com/anitaokechukwu/Hospital-Encounter-Data-Analysis-SQL-Project-
-   target="_blank"
-   rel="noopener noreferrer">
-  View Project
-</a>
+    <h3>Hospital Encounter Data Analysis (SQL)</h3>
+    <p>
+      Analyzed hospital encounter data to uncover trends in admissions,
+      encounter types, costs, and readmission behavior using SQL.
+    </p>
+
     <div class="project-links">
-  <a href="hospital-encounter.html">View Project</a>
-  <a href="https://github.com/anitaokechukwu/hospital-encounter-sql" class="github" target="_blank">
-    GitHub
-  </a>
-  <a href="#" class="demo">Live Demo</a>
+      <a href="#" class="demo">View Project</a>
+      <a href="https://github.com/YOUR-USERNAME/hospital-encounter-sql" class="github" target="_blank">
+        GitHub
+      </a>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h3>Personal Portfolio Website</h3>
+    <p>
+      Designed and deployed a personal portfolio using HTML and GitHub Pages
+      to showcase skills, projects, and learning journey.
+    </p>
+
+    <div class="project-links">
+      <a href="index.html" class="demo">View Project</a>
+      <a href="https://github.com/YOUR-USERNAME/portfolio-website" class="github" target="_blank">
+        GitHub
+      </a>
+      <a href="https://YOUR-USERNAME.github.io" class="demo" target="_blank">
+        Live Demo
+      </a>
+    </div>
+  </div>
+
 </div>
 
 
