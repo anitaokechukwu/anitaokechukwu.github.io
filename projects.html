@@ -2,360 +2,260 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Anita Okechukwu | Projects</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Anita Okechukwu</title>
 
   <style>
-  
-/* ---------- GLOBAL ---------- */
-* {
-  box-sizing: border-box;
-}
+    /* ===== GENERAL ===== */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      color: #333;
+    }
 
-body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f6f8fb;
-  color: #333;
-  line-height: 1.6;
-}
+    a {
+      text-decoration: none;
+    }
 
-/* ---------- NAVIGATION ---------- */
-nav {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+    /* ===== NAVIGATION ===== */
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-.nav-menu {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 10px;
-}
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+    }
 
-.nav-menu li {
-  margin: 5px 10px;
-}
+    .nav-logo {
+      font-weight: bold;
+      color: #4a90e2;
+      font-size: 18px;
+    }
 
-.nav-menu a {
-  text-decoration: none;
-  color: #374151;
-  font-size: 14px;
-  font-weight: 500;
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
 
-.nav-menu a:hover {
-  background-color: #2563eb;
-  color: #ffffff;
-}
+    .nav-menu li a {
+      color: #333;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
 
-/* ---------- HEADER ---------- */
-header {
-  background: linear-gradient(135deg, #2563eb, #1e40af);
-  color: white;
-  padding: 50px 20px;
-  text-align: center;
-}
+    .nav-menu li a:hover {
+      background: #4a90e2;
+      color: white;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 32px;
-}
+    /* ===== HEADER ===== */
+    header {
+      background: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-header p {
-  margin-top: 10px;
-  font-size: 16px;
-  opacity: 0.95;
-}
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
 
-/* ---------- MAIN SECTION ---------- */
-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-}
+    header p {
+      margin-top: 10px;
+      font-size: 15px;
+      opacity: 0.95;
+    }
 
-/* ---------- PROJECT CARDS ---------- */
-.card {
-  background-color: #ffffff;
-  border-radius: 14px;
-  padding: 26px;
-  margin-bottom: 30px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    /* ===== PROJECTS SECTION ===== */
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.1);
-}
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
 
-.card h2 {
-  color: #2563eb;
-  margin-top: 0;
-}
+    .project-card {
+      background: white;
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-/* ---------- LIST ---------- */
-ul {
-  padding-left: 20px;
-}
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
 
-li {
-  margin-bottom: 8px;
-}
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
 
-/* ---------- BUTTONS ---------- */
-.buttons a {
-  display: inline-block;
-  margin-top: 12px;
-  margin-right: 10px;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  color: white;
-  background-color: #2563eb;
-  font-size: 14px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
+    .project-card h3 {
+      margin: 5px 0;
+      color: #4a90e2;
+    }
 
-.buttons a:hover {
-  background-color: #1e40af;
-  transform: scale(1.05);
-}
+    .project-card p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
 
-/* ---------- FOOTER ---------- */
-footer {
-  text-align: center;
-  padding: 25px;
-  font-size: 14px;
-  color: #6b7280;
-  background-color: #eef2f7;
-  margin-top: 60px;
-}
+    .tools {
+      font-size: 13px;
+      margin-top: 8px;
+      color: #555;
+    }
 
-/* ---------- MOBILE ---------- */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 26px;
-  }
+    .project-buttons {
+      margin-top: 12px;
+    }
 
-  .nav-menu {
-    justify-content: flex-start;
-    overflow-x: auto;
-  }
+    .project-buttons a {
+      display: inline-block;
+      margin-right: 8px;
+      margin-top: 6px;
+      padding: 8px 14px;
+      background: #4a90e2;
+      color: white;
+      border-radius: 6px;
+      font-size: 13px;
+    }
 
-  .card {
-    padding: 20px;
-  }
-  .project-links {
-  margin-top: 15px;
-}
+    .project-buttons a.github {
+      background: #333;
+    }
 
-.project-links a {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 8px;
-  padding: 10px 16px;
-  border-radius: 8px;
-  font-size: 14px;
-  text-decoration: none;
-  font-weight: 500;
-  color: white;
-  background-color: #2563eb;
-  transition: all 0.3s ease;
-}
+    .project-buttons a:hover {
+      opacity: 0.9;
+    }
 
-.project-links a.github {
-  background-color: #111827;
-}
-
-.project-links a.demo {
-  background-color: #059669;
-}
-
-.project-links a:hover {
-  opacity: 0.9;
-  transform: translateY(-2px);
-}
-  .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 22px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-}
-
-.project-card h3 {
-  margin-top: 0;
-  color: #2563eb;
-}
-
-.project-card p {
-  font-size: 14px;
-  line-height: 1.6;
-}
-.project-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-}
-.projects-section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
-}
-
-.subtitle {
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.project-card {
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-buttons a {
-  display: inline-block;
-  margin-right: 10px;
-  margin-top: 10px;
-  padding: 8px 14px;
-  background: #4a90e2;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 13px;
-}
-
-
-}
-
-
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #eef1f5;
+      font-size: 14px;
+      margin-top: 50px;
+      color: #666;
+    }
   </style>
 </head>
 
 <body>
 
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <div class="nav-container">
+    <div class="nav-logo">Anita</div>
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="business.html">Business</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="images.html">Images</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="short-videos.html">Short Videos</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== HEADER ===== -->
 <header>
-  <nav>
-    <strong>Anita</strong>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="business.html">Business</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+  <h1>My Projects</h1>
+  <p>Selected works in Data Analysis | Data Science | Web & Content Creation</p>
 </header>
 
-<section class="page-title">
-  <h1>My Projects</h1>
-  <p>Selected works in Data Analysis | Data Science,  Web & Content Creation</p>
-</section>
+<!-- ===== PROJECTS ===== -->
+<section>
 
-<section class="projects-section">
+  <div class="projects-container">
 
-  
-
-  <div class="projects-grid">
-
-    <!-- Excel Project -->
+    <!-- Excel -->
     <div class="project-card">
+      <img src="excel.png" alt="Excel Project">
       <h3>Excel Data Analysis</h3>
-      <p>
-        Healthcare and business data analysis using Excel dashboards
-        and summary reports.
-      </p>
-      <p><strong>Tools:</strong> Microsoft Excel</p>
+      <p>Healthcare and business data analysis using Excel dashboards and reports.</p>
+      <div class="tools"><b>Tools:</b> Microsoft Excel</div>
+
       <div class="project-buttons">
         <a href="#" target="_blank">Live Demo</a>
-        <a href="#" target="_blank">GitHub</a>
+        <a href="#" class="github" target="_blank">GitHub</a>
       </div>
     </div>
 
-    <!-- SQL Project -->
+    <!-- SQL -->
     <div class="project-card">
+      <img src="sql.png" alt="SQL Project">
       <h3>Hospital Encounter Data Analysis (SQL)</h3>
-      <p>
-        Analyzed hospital encounter data to uncover trends in admissions,
-        costs, encounter types, and readmissions.
-      </p>
-      <p><strong>Tools:</strong> SQL</p>
+      <p>Analyzed encounter trends, costs, and readmissions using SQL.</p>
+      <div class="tools"><b>Tools:</b> SQL</div>
+
       <div class="project-buttons">
         <a href="#" target="_blank">Live Demo</a>
-        <a href="#" target="_blank">GitHub</a>
+        <a href="#" class="github" target="_blank">GitHub</a>
       </div>
     </div>
 
-    <!-- Python Project -->
+    <!-- Python -->
     <div class="project-card">
+      <img src="python.png" alt="Python Project">
       <h3>Python Data Analysis</h3>
-      <p>
-        Python scripts for data cleaning, transformation,
-        and exploratory data analysis.
-      </p>
-      <p><strong>Tools:</strong> Python</p>
+      <p>Data cleaning, transformation, and exploratory analysis with Python.</p>
+      <div class="tools"><b>Tools:</b> Python</div>
+
       <div class="project-buttons">
         <a href="#" target="_blank">Live Demo</a>
-        <a href="#" target="_blank">GitHub</a>
+        <a href="#" class="github" target="_blank">GitHub</a>
       </div>
     </div>
 
-    <!-- Web Project -->
+    <!-- Portfolio -->
     <div class="project-card">
+      <img src="web.png" alt="Web Project">
       <h3>Personal Portfolio Website</h3>
-      <p>
-        Responsive personal website built with HTML, CSS, and JavaScript
-        to showcase skills and projects.
-      </p>
-      <p><strong>Tools:</strong> HTML, CSS, GitHub Pages</p>
+      <p>Responsive personal website built with HTML, CSS, and GitHub Pages.</p>
+      <div class="tools"><b>Tools:</b> HTML, CSS, GitHub Pages</div>
+
       <div class="project-buttons">
         <a href="#" target="_blank">Live Demo</a>
-        <a href="#" target="_blank">GitHub</a>
+        <a href="#" class="github" target="_blank">GitHub</a>
       </div>
     </div>
 
   </div>
+
 </section>
 
-
+<!-- ===== FOOTER ===== -->
 <footer>
   © 2026 Anita Okechukwu
 </footer>
 
 </body>
 </html>
+ 
+
