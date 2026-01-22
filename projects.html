@@ -220,6 +220,46 @@ footer {
   margin-bottom: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.08);
 }
+.projects-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #4a90e2;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+}
 
 
 }
@@ -247,166 +287,74 @@ footer {
   <p>Selected works in Data Analysis | Data Science,  Web & Content Creation</p>
 </section>
 
-<section class="projects">
+<section class="projects-section">
 
-  <!-- PROJECT 1 -->
-  <div class="project-card">
-    <img src="images/excel-project.jpg" alt="Excel Project">
-    <h3>Excel Data Analysis</h3>
-    <p>Healthcare and business data analysis using Excel dashboards.</p>
-    <a href="https://github.com/anitaokechukwu/Jumia-Order-Project
-   target="_blank"
-   rel="noopener noreferrer">
-  View Project
-</a>
-    <div class="project-links">
-  <a href="hospital-encounter.html">View Project</a>
-  <a href="https://github.com/anitaokechukwu/Jumia-Order-Project" class="github" target="_blank">
-    GitHub
-  </a>
-  <a href="#" class="demo">Live Demo</a>
-</div>
-
-    
-  <!-- PROJECT 2-->
-<div class="projects-grid">
-
-  <div class="project-card">
-    <h3>Hospital Encounter Data Analysis (SQL)</h3>
-    <p>
-      Analyzed hospital encounter data to uncover trends in admissions,
-      encounter types, costs, and readmission behavior using SQL.
-    </p>
-
-    <div class="project-links">
-      <a href="#" class="demo">View Project</a>
-      <a href="https://github.com/anitaokechukwu/hospital-encounter-sql" class="github" target="_blank">
-        GitHub
-      </a>
-    </div>
-  </div>
-
-  <div class="project-card">
-    <h3>Personal Portfolio Website</h3>
-    <p>
-      Designed and deployed a personal portfolio using HTML and GitHub Pages
-      to showcase skills, projects, and learning journey.
-      <div class="project-card">
-
-  <img src="images/hospital-project.png" alt="Hospital Encounter SQL Project">
-
-  <h3>Hospital Encounter Data Analysis</h3>
-  <p>
-    SQL-based healthcare analytics project analyzing admissions,
-    costs, and readmissions.
+  <h2>My Projects</h2>
+  <p class="subtitle">
+    Selected works in Data Analysis, Data Science, Web & Content Creation
   </p>
 
-  <div class="project-buttons">
-    <a href="https://github.com/your-username/hospital-project" target="_blank">GitHub</a>
-    <a href="#" target="_blank">Demo</a>
-  </div>
+  <div class="projects-grid">
 
-</div>
-
-    </p>
-
-    <div class="project-links">
-      <a href="index.html" class="demo">View Project</a>
-      <a href="https://github.com/anitaokechukwu/portfolio-website" class="github" target="_blank">
-        GitHub
-      </a>
-      <a href="https://anitaokechukwu.github.io" class="demo" target="_blank">
-        Live Demo
-      </a>
+    <!-- Excel Project -->
+    <div class="project-card">
+      <h3>Excel Data Analysis</h3>
+      <p>
+        Healthcare and business data analysis using Excel dashboards
+        and summary reports.
+      </p>
+      <p><strong>Tools:</strong> Microsoft Excel</p>
+      <div class="project-buttons">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
     </div>
+
+    <!-- SQL Project -->
+    <div class="project-card">
+      <h3>Hospital Encounter Data Analysis (SQL)</h3>
+      <p>
+        Analyzed hospital encounter data to uncover trends in admissions,
+        costs, encounter types, and readmissions.
+      </p>
+      <p><strong>Tools:</strong> SQL</p>
+      <div class="project-buttons">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Python Project -->
+    <div class="project-card">
+      <h3>Python Data Analysis</h3>
+      <p>
+        Python scripts for data cleaning, transformation,
+        and exploratory data analysis.
+      </p>
+      <p><strong>Tools:</strong> Python</p>
+      <div class="project-buttons">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Web Project -->
+    <div class="project-card">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        Responsive personal website built with HTML, CSS, and JavaScript
+        to showcase skills and projects.
+      </p>
+      <p><strong>Tools:</strong> HTML, CSS, GitHub Pages</p>
+      <div class="project-buttons">
+        <a href="#" target="_blank">Live Demo</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+
   </div>
-
-</div>
-
-
-  <!-- PROJECT 3 -->
-  <div class="project-card">
-    <video controls>
-      <source src="videos/python-project.mp4" type="video/mp4">
-    </video>
-    <h3>Python Project</h3>
-    <p>Python scripts for data cleaning and analysis.</p>
-    <a href="https://github.com/anitaokechukwu/TFQ_SALES-Advanced-SQL-Data-Analysis-Project
-   target="_blank"
-   rel="noopener noreferrer">
-  View Project
-</a>
-    <div class="project-links">
-  <a href="hospital-encounter.html">View Project</a>
-  <a href="https://github.com/anitaokechukwu/Cookies-Sales-Order-Data-python" class="github" target="_blank">
-    GitHub
-  </a>
-  <a href="#" class="demo">Live Demo</a>
-</div>
-
-</div>
-
-
-  <!-- PROJECT 4 -->
-  <div class="project-card">
-    <img src="images/web-project.jpg" alt="Web Project">
-    <h3>Web Portfolio</h3>
-    <p>Personal website built with HTML, CSS, and JavaScript.</p>
-    <div class="card">
-  <h2>Web Projects</h2>
-
-  <div class="project-item">
-    <h3>Personal Portfolio Website</h3>
-    <p>
-      A responsive personal portfolio website built with HTML and CSS
-      to showcase my skills, projects, and professional background.
-    </p>
-    <p><strong>Tools:</strong> HTML, CSS, GitHub Pages</p>
-
-    <a href="https://anitaokechukwu.github.io"
-       target="_blank"
-       rel="noopener noreferrer">
-       🔗 Live Demo
-    </a>
-    |
-    <a href="https://github.com/anitaokechukwu/portfolio"
-       target="_blank"
-       rel="noopener noreferrer">
-       💻 GitHub Repo
-    </a>
-  </div>
-
-  <hr>
-
-  <div class="project-item">
-    <h3>Image Gallery Website</h3>
-    <p>
-      A clean image gallery layout with responsive design for mobile
-      and desktop viewing.
-    </p>
-    <p><strong>Tools:</strong> HTML, CSS</p>
-
-    <a href="https://anitaokechukwu.github.io/images.html
-       target="_blank">
-       🔗 Live Demo
-    </a>
-    |
-    <a href="https://github.com/anitaokechukwu/image-gallery"
-       target="_blank">
-       💻 GitHub Repo
-    </a>
-    <div class="project-links">
-  <a href="index.html">View Project</a>
-  <a href="https://github.com/anitaokechukwu/portfolio-website" class="github" target="_blank">
-    GitHub
-  </a>
-  <a href="https://anitaokechukwu.github.io" class="demo" target="_blank">
-    Live Demo
-  </a>
-</div>
-
-
 </section>
+
 
 <footer>
   © 2026 Anita Okechukwu
