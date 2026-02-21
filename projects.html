@@ -94,6 +94,49 @@
       gap: 25px;
     }
 
+    /* Image container */
+.image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+/* Image */
+.image-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  border-radius: 8px;
+}
+
+.overlay span {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Hover effects */
+.project-card:hover .image-container img {
+  transform: scale(1.1);
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
   .project-card {
   background: white;
   border-radius: 12px;
