@@ -55,6 +55,17 @@ h1 {
     margin-right: 5px;
     margin-bottom: 10px;
 }
+
+  .gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:10px;
+}
 </style>
 </head>
 
@@ -68,19 +79,86 @@ h1 {
   
   <h1>Python Project</h1>
   
-  <h1>Maternity Clinic Delivery Analysis (Python)</h1>
-  <p>
-    This project analyzes delivery patterns, complications, and trends
-    using Python (Pandas, Matplotlib).
-  </p>
+ <h1>Maternity Clinic Delivery Analysis</h1>
 
-  <div class="gallery">
-    <img src="python1.png">
-    <img src="python2.png">
-    <img src="python3.png">
-  </div>
+<span class="badge">Python</span>
+<span class="badge">Healthcare Analytics</span>
+  
+ <h2>Project Overview</h2>
 
-  <a href="projects.html" class="back-btn">← Back to Projects</a>
+<p>
+This project analyzes maternity clinic delivery data to evaluate
+delivery outcomes, complications, and maternal health trends.
+The objective was to identify patterns that can improve healthcare
+decision-making and patient outcomes.
+</p>
+
+<h2>Tools Used</h2>
+
+<ul>
+<li>Python</li>
+<li>Pandas</li>
+<li>Matplotlib</li>
+<li>Seaborn</li>
+<li>Jupyter Notebook</li>
+</ul>
+
+  <h2>Project Gallery</h2>
+
+<div class="gallery">
+
+<img src="images/weekly maternity deliveries-dashboard.png">
+<img src="images/monthly maternity delivery -dashboard.png">
+<img src="images/monthly obstetric complication-dashboard.png">
+
+</div>
+
+  <h2>Key Findings</h2>
+
+<ul>
+
+<li>
+Normal deliveries represented the majority of births.
+</li>
+
+<li>
+Pre-eclampsia was among the leading pregnancy complications.
+</li>
+
+<li>
+PPH contributed significantly to maternal risk cases.
+</li>
+
+<li>
+C-section rates showed important trends requiring further review.
+</li>
+
+</ul>
+
+  <h2>Recommendations</h2>
+
+<ul>
+
+<li>Strengthen antenatal monitoring programs.</li>
+
+<li>Improve early detection of high-risk pregnancies.</li>
+
+<li>Increase patient education on danger signs.</li>
+
+<li>Monitor C-section trends regularly.</li>
+
+</ul>
+
+  <div class="buttons">
+
+<a href="YOUR-GITHUB-LINK">
+View GitHub
+</a>
+
+<a href="projects.html">
+Back to Projects
+</a>
+
 </div>
 
 </body>
