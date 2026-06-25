@@ -103,71 +103,155 @@ h1 {
 
 <div class="container">
 
-    <span class="badge">Machine Learning</span>
-<span class="badge">Scikit-Learn</span>
-<span class="badge">Healthcare AI</span>
+ <h1>Diabetes Prediction Using Machine Learning</h1>
 
-<h1>Machine Learning Projects</h1>
+<span class="badge">Machine Learning</span>
+<span class="badge">Healthcare Analytics</span>
+<span class="badge">Classification</span>
 
-<p>
-This section showcases machine learning projects focused on prediction,
-classification, and healthcare analytics.
-</p>
-
-<div class="project">
-
-<h2>Diabetes Prediction Using Machine Learning</h2>
-
-<img src="diabetes-ml.png" alt="Diabetes Prediction Project">
+ <h2>Project Overview</h2>
 
 <p>
-Developed a machine learning model to predict diabetes risk using
-patient health indicators including glucose level, BMI, age,
-blood pressure, and insulin measurements.
+This project uses machine learning techniques to predict whether
+a patient is likely to develop diabetes based on medical and
+demographic characteristics. The goal is to support early detection
+and preventive healthcare interventions.
 </p>
+
     
- <p>
-The project involved data cleaning, exploratory data analysis,
-feature engineering, model training, and evaluation using
-classification metrics.
+<h2>Problem Statement</h2>
+
+<p>
+Diabetes is one of the most common chronic diseases worldwide.
+Early identification of high-risk patients can improve treatment
+outcomes and reduce healthcare costs. This project develops a
+classification model to predict diabetes risk using patient data.
 </p>
 
-    <h3>Key Insights</h3>
+
+<h2>Dataset</h2>
 
 <ul>
-  <li>Glucose level was the strongest predictor of diabetes.</li>
-  <li>BMI and Age showed significant influence on prediction outcomes.</li>
-  <li>The model achieved approximately 75% prediction accuracy.</li>
-  <li>Precision and recall metrics highlighted opportunities for further model improvement.</li>
-</ul> 
+<li>Dataset: Pima Indians Diabetes Dataset</li>
+<li>Rows: 768 Patients</li>
+<li>Features: 8 Medical Variables</li>
+<li>Target Variable: Diabetes Outcome</li>
+</ul>
+    
+<h2>Features Used</h2>
+
+<ul>
+<li>Pregnancies</li>
+<li>Glucose</li>
+<li>Blood Pressure</li>
+<li>Skin Thickness</li>
+<li>Insulin</li>
+<li>BMI</li>
+<li>Diabetes Pedigree Function</li>
+<li>Age</li>
+</ul>
+
+    
+<h2>Tools & Technologies</h2>
+
+<ul>
+<li>Python</li>
+<li>Pandas</li>
+<li>NumPy</li>
+<li>Matplotlib</li>
+<li>Seaborn</li>
+<li>Scikit-Learn</li>
+<li>Jupyter Notebook</li>
+</ul>
+    
+
+<h2>Project Gallery</h2>
+
+<div class="gallery">
+  <img src="images/diabetes-dashboard.png" alt="EDA Dashboard">
+  <img src="images/confusion-matrix.png" alt="Confusion Matrix">
+  <img src="images/feature-importance.png" alt="Feature Importance">
+</div>
+
+    <h2>Exploratory Data Analysis</h2>
+
+<ul>
+<li>Patients with higher glucose levels had greater diabetes risk.</li>
+<li>BMI showed a positive relationship with diabetes occurrence.</li>
+<li>Older patients were more likely to have diabetes.</li>
+<li>Glucose was one of the strongest predictors.</li>
+</ul>
+
+    <h2>Model Development</h2>
+
+<ul>
+<li>Data Cleaning and Preprocessing</li>
+<li>Feature Scaling</li>
+<li>Train-Test Split</li>
+<li>Model Training</li>
+<li>Model Evaluation</li>
+</ul>
+
+ <h2>Machine Learning Algorithm</h2>
+
+<p>
+A Logistic Regression model was developed to predict diabetes risk
+based on patient health indicators such as glucose level, BMI,
+blood pressure, and age.
+</p>
 
     <h2>Model Performance</h2>
 
 <ul>
-<li>Problem Type: Classification</li>
-<li>Dataset: Pima Diabetes Dataset</li>
-<li>Algorithm: Random Forest</li>
-<li>Accuracy: 82%</li>
+  <li>Accuracy: 75%</li>
+  <li>Precision: 75%</li>
+  <li>Recall: 75%</li>
+  <li>F1-Score: 75%</li>
 </ul>
+
+    <h2>Model Comparison</h2>
+
+<table>
+<tr>
+<th>Model</th>
+<th>Accuracy</th>
+</tr>
+
+<tr>
+<td>Logistic Regression</td>
+<td>75.3%</td>
+</tr>
+
+<tr>
+<td>Random Forest</td>
+<td>74.7%</td>
+</tr>
+
+</table>
+
+<p>
+Logistic Regression achieved the highest accuracy and was selected
+as the final model for deployment and evaluation.
+</p>
 
     <h2>Business Value</h2>
 
 <p>
-The model can assist healthcare professionals in identifying
-high-risk patients for early intervention and preventive care.
+The model can help healthcare providers identify patients at
+higher risk of diabetes, enabling earlier interventions,
+improved patient outcomes, and more efficient healthcare resource allocation.
 </p>
 
-<p>
-<strong>Tools:</strong> Python, Pandas, Scikit-Learn, Matplotlib
-</p>
+    <h2>Future Improvements</h2>
 
-    <h2>Project Gallery</h2>
+<ul>
+<li>Improve model accuracy through hyperparameter tuning.</li>
+<li>Explore additional healthcare features and patient risk factors.</li>
+<li>Deploy the model as a web application.</li>
+<li>Integrate the solution with cloud platforms such as AWS.</li>
+</ul>
 
-<div class="gallery">
-  <img src="images/diabetes-ml.png" alt="ML Dashboard">
-  <img src="images/diabetes-ml.png" alt="Model Results">
-  <img src="images/diabetes-ml.png" alt="Prediction Output">
-</div>
+    
 
     <div class="project-buttons">
   <a href="https://www.linkedin.com/in/okechukwu-anita/" target="_blank">
