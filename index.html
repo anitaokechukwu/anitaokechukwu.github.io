@@ -307,21 +307,24 @@ footer{
     display: block;
   }
 
- .stats{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
-    padding:40px 20px;
+.stats{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+
+gap:20px;
+
+padding:40px 20px;
+
 }
 
 .stat-box{
-    background:white;
-    padding:20px;
-    width:180px;
-    text-align:center;
-    border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+width:100%;
+
+padding:20px;
+
 }
 
 .stat-box h2{
