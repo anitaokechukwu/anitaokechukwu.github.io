@@ -477,18 +477,27 @@ footer{
 /* STATS */
 
 
- .featured-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-    padding:20px;
-}
-
 .featured-card{
     background:white;
-    padding:20px;
-    border-radius:12px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.featured-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(37,99,235,0.2);
+}
+
+.featured-card h3{
+    color:#2563eb;
+    margin-top:0;
+}
+
+.featured-card p{
+    margin:15px 0;
+    line-height:1.6;
 }
 
 
@@ -601,6 +610,90 @@ My goal is to leverage data analytics, artificial intelligence, and cloud techno
        
       </ul>
     </div>
+
+ <section class="card">
+
+<h2>⭐ Featured Projects</h2>
+
+<div class="featured-grid">
+
+<div class="featured-card">
+<h3>📊 Jumia Sales Analysis</h3>
+
+<p>
+Excel dashboard analyzing sales trends, customer purchasing patterns,
+and business performance through interactive visualizations.
+</p>
+
+<a href="excel-project.html" class="btn-primary">
+View Project
+</a>
+
+</div>
+
+<div class="featured-card">
+
+<h3>🏥 Hospital Encounter Data Analysis</h3>
+
+<p>
+SQL project exploring patient encounters, healthcare utilization,
+readmission trends, and operational insights from hospital data.
+</p>
+
+<a href="sql-project.html" class="btn-primary">
+View Project
+</a>
+
+</div>
+
+<div class="featured-card">
+
+<h3>👶 Maternity Clinic Delivery Analysis</h3>
+
+<p>
+Python project analyzing delivery outcomes, maternal complications,
+and clinical trends to support evidence-based healthcare decisions.
+</p>
+
+<a href="python-project.html" class="btn-primary">
+View Project
+</a>
+
+</div>
+
+<div class="featured-card">
+
+<h3>🤖 Diabetes Prediction Using Machine Learning</h3>
+
+<p>
+Built a Logistic Regression model to predict diabetes risk using
+patient health data, achieving an overall accuracy of 75.3%.
+</p>
+
+<a href="machine-learning-project.html" class="btn-primary">
+View Project
+</a>
+
+</div>
+
+<div class="featured-card">
+
+<h3>🧠 CNN Image Classification</h3>
+
+<p>
+Deep Learning project using Convolutional Neural Networks (CNNs)
+to classify images and explore computer vision applications.
+</p>
+
+<a href="deep-learning-project.html" class="btn-primary">
+View Project
+</a>
+
+</div>
+
+</div>
+
+</section>
 
     
      <section id="featured-projects">
