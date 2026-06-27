@@ -611,6 +611,60 @@ border:2px solid white;
     margin-top:30px;
 }
 
+ /* ===========================
+   Career Timeline
+=========================== */
+
+.timeline{
+    position:relative;
+    margin-top:40px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:25px;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#2563eb;
+}
+
+.timeline-item{
+    display:flex;
+    align-items:flex-start;
+    margin-bottom:40px;
+    position:relative;
+}
+
+.circle{
+    width:50px;
+    height:50px;
+    background:#2563eb;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    flex-shrink:0;
+    z-index:2;
+}
+
+.content{
+    margin-left:25px;
+}
+
+.content h3{
+    margin:0;
+    color:#2563eb;
+}
+
+.content p{
+    margin-top:8px;
+    line-height:1.7;
+}
+
 
 </style>
 
