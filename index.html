@@ -299,6 +299,45 @@ height:220px;
   opacity: 0.9;
 }
 
+   /* ---------- DARK MODE ---------- */
+
+body.dark-mode{
+    background:#111827;
+    color:#f9fafb;
+}
+
+body.dark-mode .card{
+    background:#1f2937;
+    color:white;
+}
+
+body.dark-mode nav{
+    background:#111827;
+    border-bottom:1px solid #374151;
+}
+
+body.dark-mode .nav-links a{
+    color:white;
+}
+
+body.dark-mode footer{
+    background:#030712;
+}
+
+body.dark-mode h2{
+    color:#60a5fa;
+}
+
+body.dark-mode .stat-box{
+    background:#1f2937;
+    color:white;
+}
+
+body.dark-mode .featured-card{
+    background:#1f2937;
+    color:white;
+}
+
 /* Footer */
 footer{
 
@@ -333,6 +372,8 @@ font-size:15px;
   z-index: 1000;
 }
 
+   <button id="theme-toggle">🌙</button>
+
 .logo {
   font-weight: bold;
   font-size: 18px;
@@ -358,6 +399,24 @@ font-size:15px;
 .nav-links li a:hover {
   background: #2563eb;
   color: #fff;
+}
+
+
+   /* Dark Mode Button */
+
+#theme-toggle{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+#theme-toggle:hover{
+    background:#1d4ed8;
 }
 
    table{
@@ -595,7 +654,7 @@ text-align:center;
     margin-top:30px;
 }
 
-
+ /
 </style>
 
   
@@ -642,6 +701,35 @@ text-align:center;
     <p> 👩‍⚕️Healthcare Professional • 📊Data Analyst • 🤖Data Scientist * ✨Aspiring AI Specialist </p>
 
      </header>
+
+ <script>
+
+const themeToggle = document.getElementById("theme-toggle");
+
+if(localStorage.getItem("theme") === "dark"){
+    document.body.classList.add("dark-mode");
+    themeToggle.textContent = "☀️";
+}
+
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if(document.body.classList.contains("dark-mode")){
+
+        localStorage.setItem("theme","dark");
+        themeToggle.textContent="☀️";
+
+    }else{
+
+        localStorage.setItem("theme","light");
+        themeToggle.textContent="🌙";
+
+    }
+
+});
+
+</script>
 
  <section class="stats">
   <p>
