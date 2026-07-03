@@ -1,1 +1,172 @@
+/* ==========================================
+   PORTFOLIO VERSION 3.0
+   Anita Okechukwu Portfolio
+========================================== */
 
+
+/* ==========================================
+   1. RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+/* ==========================================
+   2. COLOR VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+
+    --secondary:#7c3aed;
+
+    --success:#16a34a;
+
+    --dark:#111827;
+
+    --light:#f8fafc;
+
+    --white:#ffffff;
+
+    --text:#1f2937;
+
+    --border:#e5e7eb;
+
+    --shadow:0 8px 20px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+}
+
+
+/* ==========================================
+   3. BODY
+========================================== */
+
+body{
+
+    font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+
+    background:var(--light);
+
+    color:var(--text);
+
+    line-height:1.7;
+
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+    height:auto;
+
+}
+
+section{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:70px 20px;
+
+}
+
+
+/* ==========================================
+   4. NAVIGATION
+========================================== */
+
+nav{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:var(--white);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.navbar{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 20px;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:var(--primary);
+
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:var(--text);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+
+/* Hamburger */
+
+.hamburger{
+
+    display:none;
+
+    cursor:pointer;
+
+    font-size:30px;
+
+}
