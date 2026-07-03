@@ -170,3 +170,196 @@ nav{
     font-size:30px;
 
 }
+
+
+/* ==========================================
+   5. HERO SECTION
+========================================== */
+
+header{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary),
+        var(--dark)
+    );
+
+    color:var(--white);
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+.profile-pic{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    border:5px solid var(--white);
+
+    margin:0 auto 25px;
+
+    animation:float 4s ease-in-out infinite;
+
+    object-fit:cover;
+
+}
+
+header h1{
+
+    font-size:46px;
+
+    margin-bottom:15px;
+
+}
+
+.hero-subtitle{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.hero-description{
+
+    max-width:750px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+/* Floating animation */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==========================================
+   6. BUTTONS
+========================================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    margin:8px;
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    background:white;
+
+    color:var(--primary);
+
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ==========================================
+   7. CARDS
+========================================== */
+
+.card{
+
+    background:var(--white);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:35px;
+
+    margin:40px auto;
+
+}
+
+.card h2{
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.card p{
+
+    margin-bottom:18px;
+
+}
+
+.card ul{
+
+    padding-left:20px;
+
+}
+
+.card li{
+
+    margin-bottom:10px;
+
+}
