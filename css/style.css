@@ -363,3 +363,38 @@ header h1{
     margin-bottom:10px;
 
 }
+
+
+/* ==========================================
+   8. RESUME BOX
+========================================== */
+
+.resume-box{
+
+    margin-top:25px;
+
+    background:var(--light);
+
+    border:1px solid var(--border);
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.resume-box h3{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.resume-box p{
+
+    margin-bottom:20px;
+
+}
