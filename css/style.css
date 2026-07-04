@@ -320,6 +320,45 @@ header h1{
 }
 
 
+/* ===============================
+   TABLES
+================================ */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th,
+table td{
+    border:1px solid var(--border);
+    padding:12px;
+    text-align:left;
+}
+
+table th{
+    background:var(--primary);
+    color:white;
+}
+
+
+/* ===============================
+   CODE BLOCKS
+================================ */
+
+pre{
+    background:#0f172a;
+    color:#f8fafc;
+    padding:20px;
+    border-radius:12px;
+    overflow-x:auto;
+}
+
+code{
+    font-family:Consolas, monospace;
+}
+
 /* ==========================================
    7. CARDS
 ========================================== */
